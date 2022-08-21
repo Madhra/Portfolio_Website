@@ -15,6 +15,7 @@ header{
     left: 0;
     border-bottom: 2px solid #292a3050;
     z-index: 1;
+    background-color: white;
 }
 
 header nav ul {
@@ -32,3 +33,85 @@ header nav ul li:hover{
     text-decoration: underline;
 }
 
+
+/*---- Hero ----*/
+.hero {
+    margin: 100px 20% 0 20%;
+    display: flex;
+
+}
+.hero .introduction{
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.hero img{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px 100px / 120px;
+}
+
+/*---- Proyectos ----*/
+.proyectos h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.proyectos .tarjetas {
+    margin: 0 20% 0 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proyectos .tarjetas .tarjeta {
+    margin-top: 50px;
+    max-width: 250px;
+    border: 2px solid #42124275;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eee9e8;
+}
+.proyectos .tarjetas .tarjeta p{
+    text-align: justify;
+    padding: 0 10px;
+    margin-top: 0;
+    
+}
+.proyectos .tarjetas .tarjeta h2{
+    text-align: center;
+    margin-top: 0;
+}
+.proyectos .tarjetas .tarjeta img{
+    border-radius: 12px 12px 0  0;
+    object-fit: cover;
+    border-bottom: 2px solid  #f6dad7;
+}
+
+.proyectos .show-more{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyectos .show-more .boton{
+    padding: 1rem 2rem;
+    font-size: 16px;
+    background-color:  #781b8b;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.proyectos .show-more .boton:hover{
+    background-color: white;
+    color: #781b8b;
+    border: 2px solid #781b8b;
+    cursor: pointer;
+}
+
+.proyectos #mostrar{
+    display: none;
+}
